@@ -1,0 +1,89 @@
+:root {
+    --pink-base: #EFCCF5;
+    --pink-strong: #C782D3;
+    --font-base: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color : var(--font-base);
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+body {
+    background-color: var(--pink-base);
+}
+
+.container {
+    display: grid;
+    grid-template: "aside section";
+    grid-template-columns: 2fr 8fr;
+    height: 90vh;
+    width: 100%;
+}
+
+.aside {
+    grid-area: "aside";
+    background-color: var(--pink-strong);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.section {
+    grid-area: "section";
+}
+
+.footer {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--pink-strong);
+}
+
+.social-media-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.social-media-link  img {
+    width: 2rem;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0.5rem;
+}
+
+.description {
+    line-height: 1.5rem;
+}
+
+.skills {
+    margin-top: 30%
+}
+
+.skills > .title {
+    padding: 1.5rem;
+} 
+
+.skills-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+}
+
+.skills-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
